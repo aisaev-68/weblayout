@@ -191,15 +191,12 @@ body {
 }
 
 /* Отступ для первых четырех элементов */
-.advantages_block:nth-child(1), .advantages_block:nth-child(2),
-.advantages_block:nth-child(3), .advantages_block:nth-child(4) {
+.advantages_block:not(:nth-child(n+5)) {
   margin-bottom: 23px;
 }
 
-.advantages_block:nth-child(2), .advantages_block:nth-child(3),
-.advantages_block:nth-child(4), .advantages_block:nth-child(6),
-.advantages_block:nth-child(7), .advantages_block:nth-child(8) {
-  margin-left: 23px;
+.advantages_block:not(:nth-child(4n)) {
+  margin-right: 23px;
 }
 
 .placement_list {
@@ -222,14 +219,10 @@ body {
   /* border: 1px solid #CC9933; */
   padding: 36px 46px 41px 45px;
 }
-.placement_block:nth-child(2), .placement_block:nth-child(3),
-.placement_block:nth-child(5), .placement_block:nth-child(6),
-.placement_block:nth-child(8), .placement_block:nth-child(9) {
-  margin-left: 23px;
+.placement_block:not(:nth-child(3n)) {
+  margin-right: 23px;
 }
 
-.placement_block:nth-child(1), .placement_block:nth-child(2),
-.placement_block:nth-child(3), .placement_block:nth-child(4),
-.placement_block:nth-child(5), .placement_block:nth-child(6) {
+.placement_block:not(:nth-child(n+7)) {
   margin-bottom: 23px;
 }
