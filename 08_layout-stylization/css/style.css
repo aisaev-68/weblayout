@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Muller';
-  src: url('/weblayout/07_layout-flexbox/fonts/MullerBold.woff2') format('woff2'),
-      url('/weblayout/07_layout-flexbox/fonts/MullerBold.woff') format('woff');
+  src: url('/weblayout/08_layout-stylization/fonts/MullerBold.woff2') format('woff2'),
+      url('/weblayout/08_layout-stylization/fonts/MullerBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -12,8 +12,8 @@
 
 @font-face {
   font-family: 'Muller';
-  src: url('/weblayout/07_layout-flexbox/fonts/MullerLight.woff2') format('woff2'),
-      url('/weblayout/07_layout-flexbox/fonts/MullerLight.woff') format('woff');
+  src: url('/weblayout/08_layout-stylization/fonts/MullerLight.woff2') format('woff2'),
+      url('/weblayout/08_layout-stylization/fonts/MullerLight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: 'Muller';
-  src: url('/weblayout/07_layout-flexbox/fonts/MullerMedium.woff2') format('woff2'),
+  src: url('/weblayout/08_layout-stylization/fonts/MullerMedium.woff2') format('woff2'),
       url('/weblayout/07_layout-flexbox/fonts/MullerMedium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
