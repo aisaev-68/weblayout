@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Muller';
-  src: url('/weblayout/08_layout-stylization/fonts/MullerBold.woff2') format('woff2'),
-      url('/weblayout/08_layout-stylization/fonts/MullerBold.woff') format('woff');
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+      url('../fonts/MullerBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -12,8 +12,8 @@
 
 @font-face {
   font-family: 'Muller';
-  src: url('/weblayout/08_layout-stylization/fonts/MullerLight.woff2') format('woff2'),
-      url('/weblayout/08_layout-stylization/fonts/MullerLight.woff') format('woff');
+  src: url('../fonts/MullerLight.woff2') format('woff2'),
+      url('../fonts/MullerLight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -21,8 +21,8 @@
 
 @font-face {
   font-family: 'Muller';
-  src: url('/weblayout/08_layout-stylization/fonts/MullerMedium.woff2') format('woff2'),
-      url('/weblayout/07_layout-flexbox/fonts/MullerMedium.woff') format('woff');
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+      url('../fonts/MullerMedium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -30,8 +30,8 @@
 
 @font-face {
   font-family: 'Muller';
-  src: url('/weblayout/07_layout-flexbox/fonts/MullerRegular.woff2') format('woff2'),
-      url('/weblayout/07_layout-flexbox/fonts/MullerRegular.woff') format('woff');
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+      url('../fonts/MullerRegular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -52,7 +52,7 @@ a {
   text-decoration: none;
 }
 
-.img {
+.../img {
   max-width: 100%;
 }
 
@@ -112,6 +112,10 @@ h1, h2 {
 }
 
 .header-phone {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
   margin-left: 40px;
 }
 
@@ -309,8 +313,13 @@ btn:active {
   /* margin: 0; */
   margin-top: 0px;
   margin-bottom: 0px;
+  font-weight: bold;
   font-size: 60px;
   line-height: 60px;
+
+  color: #FFFFFF;
+
+
 }
 
 .title_offer_price {
@@ -318,6 +327,15 @@ btn:active {
   font-weight: normal;
   font-size: 20px;
   line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.item_special_offer3 .title_offer_price {
+  font-size: 30px;
+  line-height: 30px;
+
+
 }
 .title_offer_detailed {
   display: inline-flex;
@@ -340,7 +358,7 @@ btn:active {
 }
 
 .item_special_offer1 {
-  background-image: url("/weblayout/07_layout-flexbox/img/offer1.png");
+  background-image: url("../img/offer1.png");
   background-repeat: no-repeat;
   /* background-position: top center; */
   background-size: cover;
@@ -348,7 +366,7 @@ btn:active {
 }
 
 .item_special_offer2 {
-  background-image: url("/weblayout/07_layout-flexbox/img/offer2.png");
+  background-image: url("../img/offer2.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: top center; */
@@ -356,7 +374,7 @@ btn:active {
 }
 
 .item_special_offer3 {
-  background-image: url("/weblayout/07_layout-flexbox/img/offer3.png");
+  background-image: url("../img/offer3.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: top center; */
@@ -395,7 +413,7 @@ btn:active {
 }
 
 .service_content, .title_offer_detailed, .title_placement_detailed {
-  background-image: url("/weblayout/07_layout-flexbox/img/Rectangle.svg");
+  background-image: url("../img/Rectangle.svg");
   background-repeat: no-repeat;
   background-position: center right;
   /* transform: translateX(5px); */
@@ -444,25 +462,25 @@ color: #CC9933;
 }
 
 .serv-item1 {
-  background-image: url("/weblayout/07_layout-flexbox/img/servise1.jpg");
+  background-image: url("../img/servise1.jpg");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .serv-item2 {
-  background-image: url("/weblayout/07_layout-flexbox/img/servise2.jpg");
+  background-image: url("../img/servise2.jpg");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .serv-item3 {
-  background-image: url("/weblayout/07_layout-flexbox/img/servise3.jpg");
+  background-image: url("../img/servise3.jpg");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .serv-item4 {
-  background-image: url("/weblayout/07_layout-flexbox/img/servise4.jpg");
+  background-image: url("../img/servise4.jpg");
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -510,56 +528,56 @@ color: #CC9933;
 }
 
 .advantages-item1 {
-  background-image: url("/weblayout/07_layout-flexbox/img/advantage1.svg");
+  background-image: url("../img/advantage1.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position:  left 45px top 40px;
 }
 
 .advantages-item2 {
-  background-image: url("/weblayout/07_layout-flexbox/img/advantage2.svg");
+  background-image: url("../img/advantage2.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position:  left 45px top 40px;
 }
 
 .advantages-item3 {
-  background-image: url("/weblayout/07_layout-flexbox/img/advantage3.svg");
+  background-image: url("../img/advantage3.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position:  left 45px top 40px;
 }
 
 .advantages-item4 {
-  background-image: url("/weblayout/07_layout-flexbox/img/advantage4.svg");
+  background-image: url("../img/advantage4.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position:  left 45px top 40px;
 }
 
 .advantages-item5 {
-  background-image: url("/weblayout/07_layout-flexbox/img/advantage5.svg");
+  background-image: url("../img/advantage5.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position:  left 45px top 40px;
 }
 
 .advantages-item6 {
-  background-image: url("/weblayout/07_layout-flexbox/img/advantage6.svg");
+  background-image: url("../img/advantage6.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position:  left 45px top 40px;
 }
 
 .advantages-item7 {
-  background-image: url("/weblayout/07_layout-flexbox/img/advantage7.svg");
+  background-image: url("../img/advantage7.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position:  left 45px top 40px;
 }
 
 .advantages-item8 {
-  background-image: url("/weblayout/07_layout-flexbox/img/advantage8.svg");
+  background-image: url("../img/advantage8.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position:  left 45px top 40px;
@@ -636,7 +654,7 @@ color: #CC9933;
 }
 
 .placement_last {
-  background-image: url("/weblayout/07_layout-flexbox/img/placement9.svg");
+  background-image: url("../img/placement9.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
