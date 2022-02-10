@@ -295,7 +295,6 @@ btn:active {
 }
 
 .title_offer_last {
-  /* margin: 0; */
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: bold;
@@ -400,8 +399,8 @@ btn:active {
   background-image: url("../img/Rectangle.svg");
   background-repeat: no-repeat;
   background-position: center right;
-  /* transform: translateX(5px); */
 }
+
 .service_detailed {
   /* width: 402px; */
   margin-top: 0px;
@@ -683,7 +682,6 @@ btn:active {
   width: 169px;
   height: 43px;
   margin-left: 28px;
-  /* padding-right: 20px; */
   margin-right: 20px;
 }
 
@@ -712,19 +710,12 @@ btn:active {
 
 .tour_container {
   flex-direction: row;
-  /* align-items: center; */
   margin-left: 45px;
   width: 1080px;
   height: 106px;
   background: #ffffff;
   border-radius: 15px;
-  /* padding-top: 19px;
-  padding-bottom: 71px; */
 }
-/*
-.select-city {
-  /* margin-right: 20px;
-} */
 
 .select-country {
   width: 169px;
@@ -738,7 +729,7 @@ btn:active {
   padding-left: 20px;
 }
 
-.input-hights {
+.input-nights {
   width: 121px;
   height: 45px;
   padding-left: 20px;
@@ -779,7 +770,6 @@ btn:active {
 .tour_item {
   background-image: url("../img/tour.svg");
   background-repeat: no-repeat;
-  /* background-position:  right; */
 }
 
 .btn_tour {
@@ -874,15 +864,8 @@ btn:active {
   color: #cc9933;
 }
 
-/* .email_lagoona {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  color: #cc9933;
-  padding-left: 84px;
-} */
 .link_contact:focus {
-  outline: 1px solid #CC9933;
+  outline: 1px solid #cc9933;
   color: #cc9933;
 }
 
@@ -1019,16 +1002,16 @@ btn:active {
 }
 
 .social__icon:focus path {
-  outline: 1px solid #CC9933;
+  outline: 1px solid #cc9933;
   border-radius: 90px;
-  fill: #CC9933;
+  fill: #cc9933;
 }
 
 .social__icon:hover path {
-  fill: #CC9933;
+  fill: #cc9933;
 }
 
 .social__icon:active path {
-  fill: #A47312;
+  fill: #a47312;
   outline: 0px;
 }
