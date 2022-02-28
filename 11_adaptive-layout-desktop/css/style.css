@@ -59,20 +59,22 @@
   --bg_btn-how_active: #000000;
   --bg_footer-name: #414141;
   --bg_footer-email_hover: #666666;
-  --bg_default: #FF9900;
+  --bg_default: #ff9900;
   --bg_btn-header_hover: rgba(255, 153, 0, 0.7);
-  --bg_btn-hover: #F7B045;
+  --bg_btn-hover: #f7b045;
   --color_default-text: #333333;
-  --color_white: #FFFFFF;
-  --color_footer-text: #CACACA;
-  --color_active: #E1670E;
-
+  --color_white: #ffffff;
+  --color_footer-text: #cacaca;
+  --color_active: #e1670e;
 }
 
 html {
   box-sizing: border-box;
 }
-p, h1, h2, h3 {
+p,
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -90,7 +92,7 @@ a {
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: var(--color_white);
 }
 
@@ -118,7 +120,6 @@ body {
   display: flex;
 }
 
-
 .wrapper {
   margin-bottom: 100px;
 }
@@ -126,9 +127,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1770px;
-
 }
-
 
 /* ----------------------------START HEADER------------------------------ */
 
@@ -137,7 +136,6 @@ body {
   background: var(--color_white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-
 }
 
 .header__container {
@@ -154,7 +152,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 
 .header__logo {
   padding-top: 14px;
@@ -174,7 +171,7 @@ body {
   padding-bottom: 39px;
 }
 
-.nav__item:not(:last-child) {
+.header__nav__item:not(:last-child) {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -182,22 +179,21 @@ body {
   margin-right: 85px;
 }
 
-.nav__link {
+.header__nav__link {
   border-bottom: 2px solid transparent;
   color: var(--color_default-text);
   transition: border-color 0.3s ease, outline 0.3s ease, color 0.3s ease;
 }
 
-.nav__link:focus {
+.header__nav__link:focus {
   outline: 2px solid var(--bg_default);
-
 }
 
-.nav__link:hover {
+.header__nav__link:hover {
   border-bottom: 2px solid var(--bg_default);
 }
 
-.nav__link:active {
+.header__nav__link:active {
   outline: none;
   border-bottom: 2px solid var(--color_active);
   color: var(--color_active);
@@ -219,7 +215,7 @@ body {
 }
 
 .header__search:hover {
-  color:  var(--bg_default);
+  color: var(--bg_default);
   background: url("../img/hover_search.svg");
 }
 
@@ -238,7 +234,7 @@ body {
 
 .hero__container {
   position: relative;
-  background-image: url('../img/pic_0.png');
+  background-image: url("../img/pic_0.png");
   background-repeat: no-repeat;
   padding: 105px 82px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -251,7 +247,6 @@ body {
   font-size: 70px;
   line-height: 85px;
   color: var(--color_white);
-
 }
 
 .hero__desc {
@@ -304,11 +299,8 @@ body {
 
 /* ----------------------------START ABOUT------------------------------ */
 
-
-
 .about__container {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
 }
 
 .about__title {
@@ -336,7 +328,7 @@ body {
 .about__left__container {
   align-items: flex-end;
   margin-right: 32px;
-  background-image: url('../img/about_1.png');
+  background-image: url("../img/about_1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
@@ -347,7 +339,6 @@ body {
   background: rgba(0, 0, 0, 0.5);
   align-items: center;
   padding: 50px;
-
 }
 
 .about__info__text {
@@ -356,7 +347,6 @@ body {
   line-height: 32px;
   color: var(--color_white);
   margin-right: 139px;
-
 }
 
 .about__button {
@@ -370,9 +360,7 @@ body {
   text-align: center;
   color: var(--color_white);
   transition: background-color 0.3s ease, outline 0.1s ease, border 0.1s ease;
-
 }
-
 
 .about__button:hover,
 .about__button:focus {
@@ -380,12 +368,10 @@ body {
   background-color: var(--bg_btn-header_hover);
 }
 
-
 .about__button:active {
   border: none;
   background-color: var(--color_active);
 }
-
 
 .about__right__list {
   flex-direction: column;
@@ -405,18 +391,14 @@ body {
   background: var(--color_white);
   border: 1px solid var(--color_footer-text);
   padding: 65px 120px 65px 300px;
-
 }
-
 
 .about__item__title {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
   color: var(--color_default-text);
-
 }
-
 
 .about__item__text {
   margin-top: 8px;
@@ -424,7 +406,6 @@ body {
   font-size: 16px;
   line-height: 32px;
   color: var(--color_default-text);
-
 }
 
 .about__item-svg1 {
@@ -433,7 +414,7 @@ body {
   position: absolute;
   top: 65px;
   left: 60px;
-  background-image: url('../img/about_2.svg');
+  background-image: url("../img/about_2.svg");
   background-repeat: no-repeat;
   background-position: center;
   transform: matrix(1, 0, 0, 1, 0, 0);
@@ -447,7 +428,7 @@ body {
   top: 65px;
   left: 60px;
   position: absolute;
-  background-image: url('../img/about_3.svg');
+  background-image: url("../img/about_3.svg");
   background-repeat: no-repeat;
   background-position: center;
   transform: matrix(1, 0, 0, 1, 0, 0);
@@ -457,10 +438,7 @@ body {
 
 /* ----------------------------START HOW-------------------------------- */
 
-
-
 .how__container {
-
 }
 .how__title {
   min-width: 430px;
@@ -565,7 +543,6 @@ body {
   color: var(--color_white);
 }
 
-
 .how__button-contract {
   min-width: 147px;
   min-height: 60px;
@@ -582,19 +559,16 @@ body {
 .how__button-contract:focus {
   background: var(--bg_footer-email_hover);
   color: var(--color_white);
-
 }
 
 .how__button-contract:hover {
   background: var(--bg_footer-email_hover);
   color: var(--color_white);
-
 }
 
 .how__button-contract:active {
   background: var(--bg_btn-how_active);
   color: var(--color_white);
-
 }
 
 .how__right__content {
@@ -604,7 +578,7 @@ body {
 }
 
 .how__step-png {
-  background-image: url('../img/step_png1.png');
+  background-image: url("../img/step_png1.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom right;
@@ -612,7 +586,6 @@ body {
 /* ----------------------------END HOW---------------------------------- */
 
 /* ----------------------------START FAQ---------------------------------- */
-
 
 .faq__title {
   min-width: 693px;
@@ -622,7 +595,6 @@ body {
   line-height: 59px;
   color: var(--color_default-text);
   padding-top: 2px;
-
 }
 
 .faq__list {
@@ -647,7 +619,6 @@ body {
   cursor: pointer;
 }
 
-
 .faq__item:hover,
 .faq__item:focus {
   border-top: 1px solid var(--bg_default);
@@ -665,7 +636,6 @@ body {
   color: var(--color_default-text);
   cursor: pointer;
   transition: color 0.2s ease;
-
 }
 
 .faq__question__btn {
@@ -674,7 +644,6 @@ body {
   border-radius: 25px;
   background-image: url("../img/question.svg");
   transform: background-image 0.2s ease;
-
 }
 
 .faq__item:hover .faq__item__question,
@@ -695,9 +664,7 @@ body {
   background-image: url("../img/active_question.svg");
 }
 
-
 /* ----------------------------END FAQ---------------------------------- */
-
 
 /* ----------------------------START FOOTER---------------------------------- */
 .footer {
@@ -708,7 +675,6 @@ body {
   justify-content: space-between;
   padding: 50px 0px;
   align-items: center;
-
 }
 
 .footer__left__content {
@@ -725,9 +691,7 @@ body {
   max-height: 72px;
   margin-bottom: 20px;
   margin-left: -1px;
-
 }
-
 
 .footer__nav__item {
   font-weight: 600;
@@ -741,15 +705,29 @@ body {
   margin-top: 90px;
 }
 
-.footer-social__link {
+.footer__social__link {
   max-width: 230px;
   max-height: 60px;
 }
 
-
-.footer-social__link:not(:first-child) {
+.footer__social__link:not(:first-child) {
   margin-left: 25px;
 }
+
+.footer__social__link:focus {
+  outline: 2px solid var(--bg_default);
+}
+
+.footer__social__link:hover path{
+  fill: var(--bg_default);
+}
+
+
+
+.footer__social__link:active path{
+  fill: var(--color_active);
+}
+
 
 .footer__center__form {
   max-width: 572px;
@@ -757,7 +735,6 @@ body {
 }
 
 .footer__form {
-
   flex-direction: column;
 }
 
@@ -776,8 +753,6 @@ body {
   margin-left: -4px;
 }
 
-
-
 .footer__input__item {
   margin-top: 25px;
   background: var(--bg_footer-name);
@@ -789,7 +764,6 @@ body {
   transition: background-color 0.3s ease, color 0.4s linear;
   margin-left: -4px;
 }
-
 
 .footer__input__item:focus {
   background: var(--bg_footer-email_hover);
@@ -803,7 +777,8 @@ body {
   color: var(--color_white);
 }
 
-.footer__form-name, .footer__form-email {
+.footer__form-name,
+.footer__form-email {
   min-height: 60px;
 }
 
