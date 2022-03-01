@@ -11,82 +11,98 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header container">
-      <div class="header__container flex">
-        <a href="#" class="header__container__logo">
+    <header class="header">
+      <div class="header__container flex container">
+        <button class="burger"></button>
+        <a href="#" class="header__link">
           <img
             src="img/evklid-logo.svg"
             class="header__logo"
             alt="Логотип Евклид - проектные системы"
           />
         </a>
-        <nav class="nav flex">
-          <ul class="nav__list list-reset flex">
-            <li class="nav__item">
-              <a href="#" class="nav__link"> О&nbsp;нас </a>
+        <nav class="header__nav flex">
+          <ul class="header__nav-list list-reset flex">
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__link"> О&nbsp;нас </a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link"> Проекты </a>
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__link"> Проекты </a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link"> Этапы </a>
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__link"> Этапы </a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link"> Отзывы </a>
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__link"> Отзывы </a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link"> Контакты </a>
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__link"> Контакты </a>
+            </li>
+            <li class="header__nav__item">
+              <button type="submit" class="header__search"></button>
             </li>
           </ul>
-          <!-- <input type="text" class="header__input-search" placeholder="Что будем искать?"> -->
-          <button type="submit" class="header__search"></button>
         </nav>
       </div>
     </header>
-    <main class="main container">
-      <section class="hero">
-        <h1 class="hero__title">Проектные решения любой сложности</h1>
-        <p class="hero__desc">
-          Есть над чем задуматься: базовые сценарии поведения пользователей
-          и&nbsp;по&nbsp;сей день остаются уделом проектантов
-        </p>
-        <button class="hero__button">Заказать расчёт</button>
-        <div class="hero__bullit flex">
-          <svg
-            width="15"
-            height="15"
-            viewBox="0 0 15 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="eclipse"
-          >
-            <circle cx="7.5" cy="7.5" r="7.5" fill="white" />
-          </svg>
-          <svg
-            width="15"
-            height="15"
-            viewBox="0 0 15 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="eclipse"
-          >
-            <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="0.4" />
-          </svg>
-          <svg
-            width="15"
-            height="15"
-            viewBox="0 0 15 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="eclipse"
-          >
-            <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="0.4" />
-          </svg>
+    <main class="main">
+      <section class="hero wrapper">
+        <div class="hero__container container">
+          <h1 class="hero__title">Проектные решения любой сложности</h1>
+          <p class="hero__desc">
+            Есть над чем задуматься: базовые сценарии поведения пользователей
+            и&nbsp;по&nbsp;сей день остаются уделом проектантов
+          </p>
+          <button class="hero__button">Заказать расчёт</button>
+          <div class="hero__bullit flex">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="eclipse"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="white" />
+            </svg>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="eclipse"
+            >
+              <circle
+                cx="7.5"
+                cy="7.5"
+                r="7.5"
+                fill="white"
+                fill-opacity="0.4"
+              />
+            </svg>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="eclipse"
+            >
+              <circle
+                cx="7.5"
+                cy="7.5"
+                r="7.5"
+                fill="white"
+                fill-opacity="0.4"
+              />
+            </svg>
+          </div>
         </div>
       </section>
 
-      <section class="about">
-        <div class="about__container">
+      <section class="about wrapper">
+        <div class="about__container container">
           <div class="about__top__container">
             <h2 class="title about__title">О&nbsp;нас</h2>
             <p class="about__desc">
@@ -108,7 +124,7 @@
           </div>
 
           <div class="about__info flex">
-            <div class="about__left__container">
+            <div class="about__left__container flex">
               <div class="about__bottom__block flex">
                 <p class="about__info__text">
                   Принимая во&nbsp;внимание показатели успешности, перспективное
@@ -118,10 +134,10 @@
                 <button class="about__button btn-reset">Подробнее</button>
               </div>
             </div>
-            <div class="about__right__container flex">
-              <div class="about__right__item">
+            <div class="about__right__list flex">
+              <div class="about__right__item flex">
                 <div class="about__item-svg1"></div>
-                <div class="about__item__info">
+                <div class="about__item__info flex">
                   <h3 class="about__item__title">
                     Консультация с&nbsp;широким активом
                   </h3>
@@ -133,9 +149,9 @@
                   </p>
                 </div>
               </div>
-              <div class="about__right__item">
+              <div class="about__right__item flex">
                 <div class="about__item-svg2"></div>
-                <div class="about__item__info">
+                <div class="about__item__info flex">
                   <h3 class="about__item__title">
                     В&nbsp;своём стремлении повысить
                   </h3>
@@ -150,8 +166,8 @@
           </div>
         </div>
       </section>
-      <section class="how">
-        <div class="how__container">
+      <section class="how wrapper">
+        <div class="how__container container">
           <h2 class="how__title">Как мы&nbsp;работаем</h2>
           <ul class="how__list list-reset flex">
             <li class="how__list__item">
@@ -194,8 +210,8 @@
           </div>
         </div>
       </section>
-      <section class="faq">
-        <div class="faq__container">
+      <section class="faq wrapper">
+        <div class="faq__container container">
           <h2 class="faq__title">Часто задаваемые вопросы</h2>
           <ul class="faq__list list-reset flex">
             <li class="faq__item flex">
@@ -236,48 +252,40 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__container flex">
-        <div class="footer__left__content">
-          <a href="" class="footer__logo">
-            <img
-              src="./img/footer_logo.svg"
-              alt="Евклид-проектные системы"
-              class="footer__logo-svg"
-            />
-          </a>
-          <nav class="footer__nav">
-            <ul class="footer__nav__list list-reset">
-              <li class="footer__nav__item">
-                <a href="#" class="footer__nav__link"> О&nbsp;нас </a>
-              </li>
-              <li class="footer__nav__item">
-                <a href="#" class="footer__nav__link"> Проекты </a>
-              </li>
-              <li class="footer__nav__item">
-                <a href="#" class="footer__nav__link"> Отзывы </a>
-              </li>
-              <li class="footer__nav__item">
-                <a href="#" class="footer__nav__link"> Договор оферты </a>
-              </li>
-              <li class="footer__nav__item">
-                <a href="#" class="footer__nav__link"> Договор подряда </a>
-              </li>
-              <li class="footer__nav__item">
-                <a href="#" class="footer__nav__link"> Конфиденциальность </a>
-              </li>
-              <li class="footer__nav__item">
-                <a href="#" class="footer__nav__link">
-                  Партнёрское соглашение
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer__social flex">
-            <a
-              href="https://www.facebook.com/user"
-              target="_blank"
-              class="footer__social-icon facebook flex"
-            >
+      <div class="footer__container flex container">
+        <ul class="footer__left__content list-reset">
+          <li class="footer__nav__item">
+            <a href="#" class="footer__logo">
+              <img
+                src="./img/footer_logo.svg"
+                alt="Евклид-проектные системы"
+                class="footer__logo-svg"
+              />
+            </a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="#" class="footer__nav__link"> О&nbsp;нас </a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="#" class="footer__nav__link"> Проекты </a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="#" class="footer__nav__link"> Отзывы </a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="#" class="footer__nav__link"> Договор оферты </a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="#" class="footer__nav__link"> Договор подряда </a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="#" class="footer__nav__link"> Конфиденциальность </a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="#" class="footer__nav__link"> Партнёрское соглашение </a>
+          </li>
+          <li class="footer__nav__item flex">
+            <a href="" class="footer__fb__link footer__social__link">
               <svg
                 width="60"
                 height="60"
@@ -291,12 +299,7 @@
                 />
               </svg>
             </a>
-
-            <a
-              href="https://www.vk.com"
-              target="_blank"
-              class="footer__social-icon vk flex"
-            >
+            <a href="" class="footer__vk__link footer__social__link">
               <svg
                 width="60"
                 height="60"
@@ -310,11 +313,7 @@
                 />
               </svg>
             </a>
-
-            <a
-              href="https://www.instagram.com/user"
-              class="footer__social-icon instagram flex"
-            >
+            <a href="" class="footer__instagram__link footer__social__link">
               <svg
                 width="60"
                 height="60"
@@ -336,49 +335,57 @@
                 />
               </svg>
             </a>
-          </div>
-        </div>
-        <div class="footer__center__form">
-          <form action="#" method="post" class="footer__form flex">
-            <fieldset class="footer__form__fieldset flex">
-              <legend class="footer__form-title">Оставить заявку</legend>
-              <input
-                class="footer__form-name footer__input__item"
-                type="text"
-                name="name"
-                placeholder="Фамилия, имя и отчество*"
-                required="required"
-              />
-              <input
-                class="footer__form-email footer__input__item"
-                type="email"
-                name="email"
-                placeholder="E-mail*"
-                required="required"
-              />
-              <textarea
-                class="footer__form__message footer__input__item"
-                name="message"
-                placeholder="Сообщение"
-              ></textarea>
-              <div class="footer__form__button flex">
-                <button class="footer__form-btn">Отправить данные</button>
+          </li>
+        </ul>
+        <ul class="footer__center__form list-reset">
+          <li class="footer__form-header">
+            <h2 class="footer__form-title">Оставить заявку</h2>
+          </li>
+          <li class="footer__fieldset">
+            <form
+              action="https://jsonplaceholder.typicode.com/posts"
+              method="post"
+              class="footer__form flex"
+            >
+              <fieldset class="footer__form__fieldset flex">
                 <input
+                  class="footer__form-name footer__input__item"
+                  type="text"
+                  name="name"
+                  placeholder="Фамилия, имя и отчество*"
                   required="required"
-                  type="checkbox"
-                  id="checkbox__id"
-                  name="footer__form__btn"
-                  class="footer__form__btn"
-                  checked="checked"
                 />
-                <label for="checkbox__id" class="footer__checkbox__text">
-                  <span class="checkbox"></span>Согласен на&nbsp;обработку
-                  данных</label
-                >
-              </div>
-            </fieldset>
-          </form>
-        </div>
+                <input
+                  class="footer__form-email footer__input__item"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail*"
+                  required="required"
+                />
+                <textarea
+                  class="footer__form__message footer__input__item"
+                  name="message"
+                  placeholder="Сообщение"
+                ></textarea>
+              </fieldset>
+            </form>
+          </li>
+          <li class="footer__form__button flex">
+            <button class="footer__form-btn">Отправить данные</button>
+            <input
+              required="required"
+              type="checkbox"
+              id="checkbox__id"
+              name="footer__form__btn"
+              class="footer__form__btn"
+              checked="checked"
+            />
+            <label for="checkbox__id" class="footer__checkbox__text">
+              <span class="checkbox"></span>Согласен на&nbsp;обработку
+              данных</label
+            >
+          </li>
+        </ul>
         <div class="footer__right__content">
           <p class="footer__right-content">
             Высокий уровень вовлечения представителей целевой аудитории является
