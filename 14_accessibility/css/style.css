@@ -931,7 +931,7 @@ body {
 }
 
 .footer__center__form {
-  width: 570px;
+  /* width: 570px; */
   padding-left: 60px;
 }
 
@@ -939,6 +939,7 @@ body {
   border: none;
   margin: 0;
   padding: 0;
+  width: 570px;
 }
 
 .footer__form-title {
@@ -1390,7 +1391,7 @@ body {
   }
 
   .how__content-title {
-    margin-top: calc(180px + (326 - 180) * ((100vw - 320px) / (768 - 320)));
+    margin-top: 326px;
   }
 
   .how__content-tabs {
@@ -1663,7 +1664,7 @@ body {
   }
 
   .how__content-tabs::before {
-    max-height: 160px;
+    /* max-height: 160px; */
     top: 38px;
   }
 
@@ -1768,6 +1769,14 @@ body {
     width: 10px;
   }
 
+  .how__content-tabs::before {
+    max-height: 160px;
+  }
+
+  .how__content-title {
+    margin-top: 180px;
+  }
+
   .faq__accordion .faq__accordion-item:nth-child(2n) .ui-accordion-header-icon {
     top: 57px;
   }
@@ -1814,6 +1823,7 @@ body {
   }
   .footer__center__form {
     margin-bottom: 16px;
+    width: 100%;
   }
 
   .footer__form__fieldset {
@@ -1822,6 +1832,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .footer__input__item {
