@@ -86,32 +86,25 @@
       очевидна, что социально-экономическое развитие, а&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash;
       безусловно открывает новые горизонты для первоочередных требований.
     </div>
-    <form id="form" autocomplete="off" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-      <div class="form__field flex">
-        <!-- <label class="label-content" for="name">Введите Ваше имя</label> -->
-        <input type="text" class="form__input form-control" placeholder="Имя*" autocomplete="off" name="name"
-          id="name" />
-      </div>
-
-      <div class="form__field flex">
-        <!-- <label class="label-content" for="phone">Введите Ваш телефон</label> -->
-        <input type="tel" class="form__input form-control" placeholder="Телефон*" autocomplete="off" name="tel"
-          id="phone" />
-      </div>
-
-      <div class="form__field flex">
-        <!-- <label class="label-content" for="email">Введите Ваш email</label> -->
-        <input type="email" class="form__input form-control" placeholder="Email*" autocomplete="off" name="email"
-          id="email" />
-      </div>
-      <button class="btn btn-primary btn-reset" id="submit-btn" name="submit-btn">Заказать</button>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+      <label for="name">
+        <input id="name" type="text" name="name" placeholder="Имя*" class="input" data-validate-field="name">
+      </label>
+      <label for="tel">
+        <input id="tel" type="tel" name="tel" placeholder="Телефон*" class="input" data-validate-field="phone">
+      </label>
+      <label for="email">
+        <input type="email" name="email" placeholder="E-mail*" class="input" data-validate-field="email">
+      </label>
+      <button type="submit">Заказать</button>
     </form>
   </div>
   <div class="tooltip-element container flex">
     <div class="tool-tip">
       <p class="tooltip">
         Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления
-        внешнеэкономических политик. Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления
+        внешнеэкономических политик. Следует отметить, что социально-экономическое развитие способствует повышению
+        качества переосмысления
         внешнеэкономических политик.<span class="marker"></span>
       </p>
     </div>
@@ -120,7 +113,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="js/simplebar.min.js"></script>
   <script src="js/inputmask.min.js"></script>
-  <script src="js/just-validate.production.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/myscript.js"></script>

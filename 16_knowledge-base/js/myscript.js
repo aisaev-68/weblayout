@@ -45,50 +45,35 @@ ymaps.ready(function () {
   newMap.geoObjects.add(myPlacemark);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const validation = new JustValidate("#form");
-  var selector = document.querySelector("#phone");
-  var im = new Inputmask("+7 (999)-999-99-99");
-  im.mask(selector);
+var selector = document.querySelector("input[type='tel']");
 
-  validation
-    .addField("#name", [
-      {
-        rule: "minLength",
-        value: 3,
-        errorMessage: "Вы не ввели имя",
-      },
-      {
-        rule: "maxLength",
-        value: 30,
-        errorMessage: "Вы не ввели имя",
-      },
-      {
-        rule: "required",
-        errorMessage: "Введите Ваше имя",
-      },
-    ])
-    .addField("#phone", [
-      {
-        rule: "function",
-        validator: function (name, value) {
-          const phone = selector.inputmask.unmaskedvalue();
-          return phone.length === 10;
+    var im = new Inputmask("+7 (999) 999-99-99");
+    im.mask(selector);
+
+    new JustValidate('.form', {
+      rules: {
+        name: {
+          required: true,
+          minLength: 2
         },
-        errorMessage: "Введите Ваш телефон",
+        phone: {
+          required: true,
+          function: (name, value) => {
+            const num = selector.inputmask.unmaskedvalue()
+            return Number(num) && num.length === 10
+          }
+        },
+        email: {
+          required: true,
+          email: true
+        },
       },
-    ])
-    .addField("#email", [
-      {
-        rule: "required",
-        errorMessage: "Введите Ваш Email",
-      },
-      {
-        rule: "email",
-        errorMessage: "Вы не ввели Email",
-      },
-    ]);
-});
+      messages: {
+        name: "Как вас зовут?",
+        phone: "Укажите ваш телефон",
+        email: "Укажите ваш e-mail"
+      }
+    })
 
 $(function () {
   $(".marker").tooltip({
