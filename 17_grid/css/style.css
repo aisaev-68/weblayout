@@ -337,6 +337,14 @@ img {
   padding-right: 4px;
 }
 
+@media (max-width: 1920px) {
+  .hero-content {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+
 @media (max-width: 1440px) {
   .navbar-brand {
     margin-bottom: 0;
